@@ -196,6 +196,7 @@ export default {
       getServer().then(response => {
         this.server = response.data;
         this.$modal.closeLoading();
+        console.log('server信息==='+JSON.stringify( this.server));
       });
     },
     // 打开加载层
